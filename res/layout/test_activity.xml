@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical"
+    tools:context=".MainActivity" >  
+  
+    <FrameLayout  
+        android:id="@+id/content"  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1" >  
+    </FrameLayout>  
+  
+    <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="60dp"  
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="horizontal"
+         >  
+  
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+  
+  				<Button android:id="@+id/btn_topology"  
+                    android:layout_width="match_parent"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center"  
+                    android:text="拓扑"  
+                    android:textColor="#000000"/>
+            </LinearLayout>  
+  
+            <LinearLayout  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_weight="0.25"
+             	android:layout_gravity="center" 
+                android:orientation="vertical" >  
+  
+                <Button  android:id="@+id/btn_lineloss"  
+                    android:layout_width="match_parent"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center"  
+                    android:text="线损"  
+                    android:textColor="#000000"/> 
+            </LinearLayout>  
+  
+            <LinearLayout  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_weight="0.25"
+                android:layout_gravity="center"
+                android:orientation="vertical" >  
+  
+                <Button  android:id="@+id/btn_electricenergy"  
+                    android:layout_width="match_parent"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center" 
+                    android:text="电能"  
+                    android:textColor="#000000"/> 
+            </LinearLayout>  
+  
+            <LinearLayout  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.25"
+                android:layout_gravity="center"
+                android:orientation="vertical" >  
+                
+  				<Button  android:id="@+id/btn_setting"  
+                    android:layout_width="match_parent"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center"  
+                    android:text="设置"  
+                    android:textColor="#000000"/>
+            </LinearLayout>  
+    </LinearLayout>  
+  
+</LinearLayout>  

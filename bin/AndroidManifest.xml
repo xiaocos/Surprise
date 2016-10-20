@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yu.surprise"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:name="com.yu.surprise.app.SApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.yu.surprise.test.LoadingActivity" >
+        </activity>
+        <activity
+            android:name="com.yu.surprise.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.yu.surprise.MovableTextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.yu.surprise.DynamicAddActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.yu.surprise.ProgressCircle"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.yu.surprise.test.Test"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|screenSize|orientation" 
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yu.surprise.showtips.TestTips" >
+        </activity>
+        <activity android:name="com.yu.surprise.showtips.TestXProgressDialog" >
+        </activity>
+        <activity android:name="com.yu.surprise.littlewindow.LittleWindowActivity" >
+        </activity>
+        <activity android:name="com.yu.surprise.test.TestScroll" >
+        </activity>
+
+        <service android:name="com.yu.surprise.service.BackgroundService" >
+        </service>
+        <service android:name="com.yu.surprise.service.AlertService" >
+        </service>
+    </application>
+
+</manifest>
